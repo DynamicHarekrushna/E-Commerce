@@ -1,0 +1,104 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+header {
+  height: auto;
+  width: auto;
+}
+
+.head {
+  height: 200px;
+  width: 100%;
+  background-image: url("bg.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+
+#heading {
+  height: 100px;
+  background-image: -webkit-linear-gradient(to left, 0% #ffff00, 100% #00ff00);
+  text-align: center;
+  font-size: 90px;
+  font-weight: bold;
+  margin-top: 30px;
+  filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.5));
+}
+
+.container {
+  max-width: 500px;
+  margin: auto;
+  padding: 20px;
+}
+
+button {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.signup-form {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button[type="submit"] {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #218838;
+}
+
+.error {
+  color: red;
+  text-align: center;
+}
+
+.branding {
+  text-align: center;
+}
+
+.brand-logos {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.brand-logos img {
+  margin: 10px;
+  max-width: 100px; /* Adjust the size of brand logos */
+  height: auto;
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Order Overview</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <h2>👤 Admin Manager</h2>
+      <ul>
+        <li>Dashboard</li>
+        <li>My Profile</li>
+        <li class="active">Order Overview</li>
+        <li>Agents</li>
+        <li>Company</li>
+        <li>General Settings</li>
+        <li>Logout</li>
+      </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+      <!-- Export Button -->
+      <!-- <div class="export-btn">
+        <button id="exportCSV">Export CSV ➕</button>
+      </div> -->
+
+      <!-- Orders Table -->
+      <div class="table-container">
+        <table id="orderTable">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Order #</th>
+              <th>Date</th>
+              <th>Store</th>
+              <th>Company / By</th>
+              <th>Ordered</th>
+              <th>Status</th>
+              <th>Total</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>1329</td>
+              <td>U2210</td>
+              <td>S202</td>
+              <td>Duong Tu anh new</td>
+              <td>Showcase</td>
+              <td>Awaiting Fulfillment</td>
+              <td>€259.00</td>
+              <td>
+                <button class="edit-btn">Edit</button>
+                <button class="delete-btn">Delete</button>
+                <button class="view" onclick="viewProduct()">view</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Add New Row Form -->
+      <div class="form-container">
+        <h3>Add / Edit Product</h3>
+        <form id="productForm">
+          <input type="text" id="order" placeholder="Order #" required />
+          <input type="text" id="date" placeholder="Date" required />
+          <input type="text" id="store" placeholder="Store" required />
+          <input type="text" id="company" placeholder="Company / By" required />
+          <input type="text" id="ordered" placeholder="Ordered" required />
+          <input type="text" id="status" placeholder="Status" required />
+          <input type="text" id="total" placeholder="Total" required />
+          <button type="submit" id="saveBtn">Save</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

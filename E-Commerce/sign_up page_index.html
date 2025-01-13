@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up - Shopping Website</title>
+    <link rel="stylesheet" href="sign_up page_style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="head">
+        <h1 id="heading">Shopping Website</h1>
+      </div>
+    </header>
+
+    <div class="container">
+      <h2 style="text-align: center">Sign Up</h2>
+      <form id="signupForm" class="signup-form">
+        <div class="input-group">
+          <label for="name">Full Name:</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+        <div class="input-group">
+          <label for="username">Username:</label>
+          <input type="text" id="username" name="username" required />
+        </div>
+        <div class="input-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div class="input-group">
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required />
+        </div>
+        <button type="submit">Sign Up</button>
+        <p id="error-message" class="error"></p>
+      </form>
+    </div>
+
+    <footer class="branding">
+      <h2>Our Brands</h2>
+      <div class="brand-logos">
+        <img src="hp.png" alt="Brand 1" />
+        <img src="acer.png" alt="Brand 2" />
+        <img src="social.png" alt="Brand 3" />
+        <img src="hp.png" alt="Brand 4" />
+      </div>
+    </footer>
+
+    <script src="sign_up page_script.js"></script>
+  </body>
+</html>

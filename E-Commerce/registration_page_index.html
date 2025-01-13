@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Page</title>
+    <link rel="stylesheet" href="registration_page_style.css" />
+  </head>
+  <body>
+    <div class="background-image">
+      <div class="container">
+        <!--Image Section -->
+        <div class="image-section">
+          <img src="registration_page_image.jpg" />
+        </div>
+
+        <!-- Registration Form Section -->
+        <div class="form-section">
+          <h1>Registration</h1>
+          <form id="registrationForm" onsubmit="return validateForm()">
+            <label for="fullName">Full Name</label>
+            <input
+              type="text"
+              id="fullName"
+              name="fullName"
+              placeholder="Enter your name"
+              required
+            />
+
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Enter your email"
+              required
+            />
+
+            <label for="phone">Phone Number</label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              placeholder="Enter your phone number"
+              required
+            />
+
+            <label for="country">Country</label>
+            <input
+              type="text"
+              id="country"
+              name="country"
+              placeholder="Enter your country"
+              required
+            />
+
+            <label for="city">City</label>
+            <input
+              type="text"
+              id="city"
+              name="city"
+              placeholder="Enter your city"
+              required
+            />
+
+            <label for="password">Password</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="Enter your password"
+              required
+            />
+
+            <label for="confirmPassword">Confirm Password</label>
+            <input
+              type="password"
+              id="confirmPassword"
+              name="confirmPassword"
+              placeholder="Confirm your password"
+              required
+            />
+
+            <label>Gender</label>
+            <div>
+              <input type="radio" id="male" name="gender" value="Male" />
+              <label for="male">Male</label>
+
+              <input type="radio" id="female" name="gender" value="Female" />
+              <label for="female">Female</label>
+
+              <input type="radio" id="other" name="gender" value="Other" />
+              <label for="other">Other</label>
+
+              <input
+                type="radio"
+                id="preferNotSay"
+                name="gender"
+                value="Prefer not to say"
+              />
+              <label for="preferNotSay">Prefer not to say</label>
+            </div>
+
+            <button type="submit">Next Step</button>
+          </form>
+          <p>Already have an account? <a href="#">Sign in</a></p>
+        </div>
+      </div>
+    </div>
+    <script src="registration_page_script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-Commerce</title>
+    <!-- Google Material Icons -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+      <div class="logo">LOGO</div>
+      <ul class="nav-links">
+        <li><a href="index.html" class="Ho1" style="color: #fff;">Home</a></li>
+        <hr />
+        <li>
+          <a href="section_page_index.html" class="Ho1"style="color: #fff;">Shop</a>
+
+          <ul class="dropdownlist">
+            <li><a href="#">Women Ethnic</a></li>
+            <hr />
+            <li><a href="#">Women Western</a></li>
+            <hr />
+            <li><a href="#">Men</a></li>
+            <hr />
+            <li><a href="#">Kids</a></li>
+            <hr />
+            <li><a href="#">Home & Kitchen</a></li>
+            <hr />
+            <li><a href="#">Beauty & Health</a></li>
+            <hr />
+            <li><a href="#">Jewellery & Accessories</a></li>
+            <hr />
+            <li><a href="#">Bags & Footwear</a></li>
+            <hr />
+            <li><a href="#">Electronics</a></li>
+            <hr />
+          </ul>
+        </li>
+        <hr />
+        <li>
+          <a href="#" class="Ho1" style="color: #fff;">Categories</a>
+
+          <ul class="dropdownlist">
+            <li><a href="#">Category 1</a></li>
+            <li><a href="#">Category 2</a></li>
+            <li><a href="#">Category 3</a></li>
+          </ul>
+        </li>
+        <hr />
+        <li><a href="" class="Ho1"style="color: #fff;">About Us</a></li>
+        <hr />
+        <li><a href="#" class="Ho1"style="color: #fff;">Contact Us</a></li>
+        <hr />
+        <li>
+          <a href="user_profile_index.html" class="Ho1"
+          style="color: #fff;">Login/Sign-Up</a>
+          <ul class="dropdownlist">
+            <li><a href="login_page_index.html">Login</a></li>
+            <li><a href="registration_page_index.html">Sign-Up</a></li>
+          </ul>
+        </li>
+        <hr />
+        <li>
+          <li><a href="dashboard_index.html" style="color: #fff; text-align: center;">dashboard</a></li>
+        </li>
+      </ul>
+      <div class="search-bar">
+        <input type="text" placeholder="Search ..." />
+        <button>Search</button>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <main>
+      <section class="hero-section">
+        <img src="Bg.jpg" alt="" style="width: 100%" />
+        <div class="hero-content">
+          <h1>SHOPPING</h1>
+          <h2>ONLINE</h2>
+          <p>
+            "Welcome to your one-stop shop for top-quality products at
+            unbeatable prices! Discover exclusive deals, fast shipping, and an
+            effortless shopping experience tailored just for you."
+          </p>
+          <a href="#" class="cta-button">Shop Now</a>
+        </div>
+      </section>
+    </main>
+    <!-- image nav-bar -->
+    <nav class="nav-bar">
+      <div class="nav-item">
+        <span class="material-icons">local_offer</span>
+        <p>Top Offers</p>
+      </div>
+      <div class="nav-item">
+        <span class="material-icons">smartphone</span>
+        <p>Mobiles & Tablets</p>
+      </div>
+      <div class="nav-item">
+        <span class="material-icons">tv</span>
+        <p>TVs & Appliances</p>
+      </div>
+      <div class="nav-item">
+        <span class="material-icons">memory</span>
+        <p>Electronics</p>
+      </div>
+      <div class="nav-item">
+        <span class="material-icons">checkroom</span>
+        <p>Fashion</p>
+      </div>
+      <div class="nav-item">
+        <span class="material-icons">spa</span>
+        <p>Beauty</p>
+      </div>
+      <div class="nav-item">
+        <span class="material-icons">kitchen</span>
+        <p>Home & Kitchen</p>
+      </div>
+      <div class="nav-item">
+        <span class="material-icons">weekend</span>
+        <p>Furniture</p>
+      </div>
+      <div class="nav-item">
+        <span class="material-icons">flight</span>
+        <p>Travel</p>
+      </div>
+      <div class="nav-item">
+        <span class="material-icons">shopping_cart</span>
+        <p>Grocery</p>
+      </div>
+    </nav>
+    <!-- Image Slide -->
+
+    <div class="slider">
+      <div class="slides">
+        <!-- Slide Images -->
+        <div class="slide">
+          <img src="sale.jpg" alt="Image 1" />
+        </div>
+        <div class="slide">
+          <img
+            src="https://graphicsfamily.com/wp-content/uploads/edd/2022/11/Simple-E-commerce-Banner-Design-scaled.jpg "
+            alt="Image 2"
+          />
+        </div>
+        <div class="slide">
+          <img src="TV.jpg" alt="Image 3" />
+        </div>
+        <div class="slide">
+          <img src="Phone.jpg" alt="Image 4" />
+        </div>
+        <div class="slide">
+          <img src="shooes.jpg" alt="Image 5" />
+        </div>
+        <div class="slide">
+          <img src="Laptop.jpg" alt="Image 6" />
+        </div>
+        <div class="slide">
+          <img src="extrasale.jpg" alt="Image 7" />
+        </div>
+      </div>
+
+      <!-- Left and Right Arrows -->
+      <div class="prev" onclick="moveSlide(-1)">&#10094;</div>
+      <div class="next" onclick="moveSlide(1)">&#10095;</div>
+    </div>
+
+    <!-- category Section  -->
+
+    <nav class="navbar-Section">
+      <div class="nav-header">
+        <!-- <span class="nav-brand">My Store</span> -->
+        <button class="nav-toggle" aria-label="Toggle Navigation Menu">
+          &#9776;
+        </button>
+      </div>
+      <ul class="nav-menu">
+        <!-- Women Western Dropdown -->
+        <li class="dropdown">
+          <a href="#" class="dropbtn">Women Western</a>
+          
+          <div class="dropdown-content">
+            <div class="dropdown-column">
+              <h3>All Women Western</h3>
+              <a href="section_page_index.html"
+                >View All</a
+              >
+            </div>
+            <hr style="color: black" />
+            <div class="dropdown-column">
+              <h3>Tops</h3>
+              <a href="section_page_index.html"
+                >All Tops</a
+              >
+              <a href="section_page_index.html"
+                >Crop Tops</a
+              >
+              <a href="section_page_index.html"
+                >Tunics</a
+              >
+              <a href="section_page_index.html"
+                >Blouses</a
+              >
+            </div>
+            <hr style="color: black" />
+            <div class="dropdown-column">
+              <h3>Dresses</h3>
+              <a href="section_page_index.html"
+                >All Dresses</a
+              >
+              <a href="section_page_index.html"
+                >Maxi Dresses</a
+              >
+              <a href="section_page_index.html"
+                >Bodycon Dresses</a
+              >
+              <a href="section_page_index.html"
+                >A-line Dresses</a
+              >
+            </div>
+            <hr style="color: black" />
+            <div class="dropdown-column">
+              <h3>Bottomwear</h3>
+              <a href="section_page_index.html"
+                >Jeans</a
+              >
+              <a href="section_page_index.html"
+                >Palazzos</a
+              >
+              <a href="section_page_index.html"
+                >Shorts</a
+              >
+              <a href="section_page_index.html"
+                >Skirts</a
+              >
+            </div>
+            <hr style="color: black" />
+            <div class="dropdown-column">
+              <h3>Jackets & Shrugs</h3>
+              <a href="section_page_index.html"
+                >Jackets</a
+              >
+              <a href="section_page_index.html"
+                >Shrugs</a
+              >
+            </div>
+          </div>
+        </li>
+
+        <!-- Men Dropdown -->
+        <li class="dropdown">
+          <a href="#" class="dropbtn">Men</a>
+          <div class="dropdown-content">
+            <div class="dropdown-column">
+              <h3>All Men</h3>
+              <a href="section_page_index.html">View All</a>
+            </div
+            <hr syle="color: black" />
+            <div class="dropdown-column">
+              <h3>Topwear</h3>
+              <a href="section_page_index.html">All Topwear</a>
+              <a href="section_page_index.html">Shirts</a>
+              <a href="section_page_index.html">T-Shirts</a>
+              <a href="section_page_index.html">Casual Shirts</a>
+              <a href="section_page_index.html">Formal Shirts</a>
+            </div>
+            <hr style="color: black" />
+            <div class="dropdown-column">
+              <h3>Bottomwear</h3>
+              <a href="section_page_index.html">Jeans</a>
+              <a href="section_page_index.html">Trousers</a>
+              <a href="section_page_index.html">Shorts</a>
+              <a href="section_page_index.html">Cargos</a>
+            </div>
+            <hr style="color: black" />
+            <div class="dropdown-column">
+              <h3>Ethnic Wear</h3>
+              <a href="section_page_index.html">Kurtas</a>
+              <a href="section_page_index.html">Sherwanis</a>
+              <a href="section_page_index.html">Nehru Jackets</a>
+            </div>
+            <hr style="color: black" />
+            <div class="dropdown-column">
+              <h3>Footwear</h3>
+              <a href="section_page_index.html">Casual Shoes</a>
+              <a href="section_page_index.html">Formal Shoes</a>
+              <a href="section_page_index.html">Sneakers</a>
+            </div>
+          </div>
+        </li>
+
+        <!-- Kids Dropdown -->
+        <li class="dropdown">
+          <a href="#" class="dropbtn">Kids</a>
+          <div class="dropdown-content">
+            <div class="dropdown-column">
+              <h3>All Kids</h3>
+              <a href="section_page_index.html">View All</a>
+            </div>
+            <hr style="color: black" />
+            <div class="dropdown-column">
+              <h3>Boys Clothing</h3>
+              <a href="section_page_index.html">T-Shirts</a>
+              <a href="section_page_index.html">Shirts</a>
+              <a href="section_page_index.html">Jeans</a>
+            </div>
+            <hr style="color: black" />
+            <div class="dropdown-column">
+              <h3>Girls Clothing</h3>
+              <a href="section_page_index.html">Dresses</a>
+              <a href="section_page_index.html">Tops</a>
+              <a href="section_page_index.html">Skirts</a>
+            </div>
+            <hr style="color: black" />
+            <div class="dropdown-column">
+              <h3>Footwear</h3>
+              <a href="section_page_index.html">Kids Shoes</a>
+              <a href="section_page_index.html">Sandals</a>
+              <a href="section_page_index.html">Sneakers</a>
+            </div>
+            <hr style="color: black" />
+            <div class="dropdown-column">
+              <h3>Toys & Accessories</h3>
+              <a href="section_page_index.html">Soft Toys</a>
+              <a href="section_page_index.html">Educational Toys</a>
+              <a href="section_page_index.html">Stationery</a>
+            </div>
+          </div>
+        </li>
+
+        <!-- Home & Kitchen Dropdown -->
+        <li class="dropdown">
+          <a href="#" class="dropbtn">Home & Kitchen</a>
+          <div class="dropdown-content new-ww">
+            <div class="dropdown-column">
+              <h3>All Home & Kitchen</h3>
+              <a href="section_page_index.html">View All</a>
+            </div>
+            <hr style="color: black" />
+            <div class="dropdown-column">
+              <h3>Cookware</h3>
+              <a href="section_page_index.html">Pots & Pans</a>
+              <a href="section_page_index.html">Cooking Sets</a>
+              <a href="section_page_index.html">Pressure Cookers</a>
+            </div>
+            <hr style="color: black" />
+            <div class="dropdown-column">
+              <h3>Dining & Kitchen</h3>
+              <a href="section_page_index.html">Tableware</a>
+              <a href="section_page_index.html">Cutlery</a>
+              <a href="section_page_index.html">Kitchen Tools</a>
+            </div>
+            <hr style="color: black" />
+            <div class="dropdown-column">
+              <h3>Home Decor</h3>
+              <a href="section_page_index.html">Wall Art</a>
+              <a href="section_page_index.html">Vases</a>
+              <a href="section_page_index.html">Curtains</a>
+            </div>
+            <hr style="color: black" />
+            <div class="dropdown-column">
+              <h3>Storage & Organization</h3>
+              <a href="section_page_index.html">Organizers</a>
+              <a href="section_page_index.html">Shelves</a>
+              <a href="section_page_index.html">Racks</a>
+            </div>
+          </div>
+        </li>
+
+        <!-- Beauty & Health Dropdown -->
+        <li class="dropdown">
+          <a href="#" class="dropbtn">Beauty & Health</a>
+          <div class="dropdown-content new-ww">
+            <div class="dropdown-column">
+              <h3>All Beauty & Health</h3>
+              <a href="section_page_index.html">View All</a>
+            </div>
+            <hr style="color: black" />
+            <div class="dropdown-column">
+              <h3>Makeup</h3>
+              <a href="section_page_index.html">Lipstick</a>
+              <a href="section_page_index.html">Foundation</a>
+              <a href="section_page_index.html">Eye Makeup</a>
+            </div>
+            <hr style="color: black" />
+            <div class="dropdown-column">
+              <h3>Hair Care</h3>
+              <a href="section_page_index.html">Shampoo</a>
+              <a href="section_page_index.html">Conditioner</a>
+              <a href="section_page_index.html">Hair Oil</a>
+            </div>
+            <hr style="color: black" />
+            <div class="dropdown-column">
+              <h3>Skincare</h3>
+              <a href="section_page_index.html">Face Wash</a>
+              <a href="section_page_index.html">Moisturizer</a>
+              <a href="section_page_index.html">Sunscreen</a>
+            </div>
+          </div>
+        </li>
+
+        <!-- Jewellery & Accessories Dropdown -->
+        <li class="dropdown">
+          <a href="#" class="dropbtn">Jewellery & Accessories</a>
+          <div class="dropdown-content new-ww">
+            <div class="dropdown-column">
+              <h3>All Jewellery</h3>
+              <a href="section_page_index.html">View All</a>
+            </div>
+            <hr style="color: black" />
+            <div class="dropdown-column">
+              <h3>Fashion Jewellery</h3>
+              <a href="section_page_index.html">Necklaces</a>
+              <a href="section_page_index.html">Earrings</a>
+              <a href="section_page_index.html">Bracelets</a>
+            </div>
+            <hr style="color: black" />
+            <div class="dropdown-column">
+              <h3>Accessories</h3>
+              <a href="section_page_index.html">Bags</a>
+              <a href="section_page_index.html">Sunglasses</a>
+              <a href="section_page_index.html">Watches</a>
+            </div>
+          </div>
+        </li>
+
+        <!-- Bags & Footwear Dropdown -->
+        <li class="dropdown">
+          <a href="#" class="dropbtn">Bags & Footwear</a>
+          <div class="dropdown-content new-ww">
+            <div class="dropdown-column">
+              <h3>All Bags & Footwear</h3>
+              <a href="section_page_index.html">View All</a>
+            </div>
+            <hr style="color: black" />
+            <div class="dropdown-column">
+              <h3>Women Bags</h3>
+              <a href="section_page_index.html">Handbags</a>
+              <a href="section_page_index.html">Clutches</a>
+              <a href="section_page_index.html">Sling Bags</a>
+            </div>
+            <hr style="color: black" />
+            <div class="dropdown-column">
+              <h3>Footwear</h3>
+              <a href="section_page_index.html">Heels</a>
+              <a href="section_page_index.html">Flats</a>
+              <a href="section_page_index.html">Casual Shoes</a>
+            </div>
+          </div>
+        </li>
+
+        <!-- Electronics Dropdown -->
+        <li class="dropdown">
+          <a href="#" class="dropbtn">Electronics</a>
+          <div class="dropdown-content new-www">
+            <div class="dropdown-column">
+              <h3>All Electronics</h3>
+              <a href="section_page_index.html">View All</a>
+            </div>
+            <hr style="color: black" />
+            <div class="dropdown-column">
+              <h3>Mobile Phones</h3>
+              <a href="section_page_index.html">Smartphones</a>
+              <a href="section_page_index.html">Feature Phones</a>
+            </div>
+            <hr style="color: black" />
+            <div class="dropdown-column">
+              <h3>Mobile Accessories</h3>
+              <a href="section_page_index.html">Chargers</a>
+              <a href="section_page_index.html">Earphones</a>
+              <a href="section_page_index.html">Power Banks</a>
+            </div>
+            <hr style="color: black" />
+            <div class="dropdown-column">
+              <h3>Computers & Laptops</h3>
+              <a href="section_page_index.html">Laptops</a>
+              <a href="section_page_index.html">Desktops</a>
+              <a href="section_page_index.html">Printers</a>
+            </div>
+            <hr style="color: black" />
+            <div class="dropdown-column">
+              <h3>Smart Devices</h3>
+              <a href="section_page_index.html">Smart Watches</a>
+              <a href="section_page_index.html">Fitness Bands</a>
+              <a href="section_page_index.html">Smart Home Devices</a>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Product List -->
+    <div class="product-list">
+      <h1 style="color: aliceblue;">Product List</h1>
+      <div id="products"></div>
+      <a href="section_page_index.html">
+        <button class="product-list-but"
+          style="
+            height: 40px;
+            width: 100px;
+            transform: translate(550px,0px);
+            bottom: 20px;
+            background-color:  white;
+            border-radius: 20px;">
+          View More
+        </button>
+      </a>
+    </div>
+
+    <div class="content-container">
+      <!-- Review Section -->
+      <div class="review-container" style=" background-color:#132a60f0;">
+        <center><h2>Leave a Review</h2></center>
+        <div class="rating-container">
+          <center>
+            <span class="rating-title">Click Stars to Rate the product:</span>
+          </center>
+          <br />
+          <center>
+            <div class="stars">
+              <span class="star" data-rating="1">&#9733;</span>
+              <span class="star" data-rating="2">&#9733;</span>
+              <span class="star" data-rating="3">&#9733;</span>
+              <span class="star" data-rating="4">&#9733;</span>
+              <span class="star" data-rating="5">&#9733;</span>
+            </div>
+            <span class="rating-value" id="rating-value">0/5</span><br />
+            <span>Share your review about recently purchased product</span>
+          </center>
+        </div>
+        <textarea
+          id="review-text"
+          placeholder="Write your review here..."
+        ></textarea>
+        <center><button id="submit-review">Submit Review</button></center>
+      </div>
+    
+      <!-- Subscription Section -->
+      <div class="newsletter-container" style="  background-color:#132a60f0;">
+        <center><h2>Join the newsletter !</h2></center>
+        <center>
+          <p>
+            Subscribe to get the latest content by email and to become a fellow
+            pineapple🍍
+          </p>
+        </center>
+        <form id="newsletter-form">
+          <div class="form-group">
+            <input type="text" id="name" placeholder="Your Name" required />
+          </div>
+          <div class="form-group">
+            <input
+              type="email"
+              id="email"
+              placeholder="your@email.com"
+              required
+            />
+          </div>
+          <center><button id="subscribe-btn">Subscribe</button></center>
+        </form>
+        <div id="newsletter-status"></div>
+      </div>
+    </div>
+    
+    <!-- footer -->
+    <section class="section section-footer">
+      <footer class="footer">
+        <div class="footer-section">
+          <h3>ONLINE SHOPPING</h3>
+          <hr />
+          <br />
+          <ul>
+            <li><a href="section_page_index.html">Men</a></li>
+            <li><a href="section_page_index.html">Women</a></li>
+            <li><a href="section_page_index.html">Kids</a></li>
+            <li><a href="section_page_index.html">Home & Living</a></li>
+            <li><a href="section_page_index.html">Beauty</a></li>
+            <li><a href="section_page_index.html">Gift Cards</a></li>
+            <li><a href="section_page_index.html">Online Insider</a></li>
+          </ul>
+        </div>
+        <hr />
+        <div class="footer-section">
+          <h3>CUSTOMER POLICY</h3>
+          <hr />
+          <br />
+          <ul>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">T&C</a></li>
+            <li><a href="#">Terms Of Use</a></li>
+            <li><a href="#">Track Orders</a></li>
+            <li><a href="#">Shipping</a></li>
+            <li><a href="#">Cancellation</a></li>
+            <li><a href="#">Returns</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <hr />
+        <div class="footer-section">
+          <h3>USEFUL LINKS</h3>
+          <hr />
+          <br />
+          <ul>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Site Map</a></li>
+            <li><a href="#">Corporate Information</a></li>
+            <li><a href="#">Whitehat</a></li>
+          </ul>
+        </div>
+        <hr />
+        <div class="footer-section">
+          <h3>EXPERIENCE ONLINE APP ON MOBILE</h3>
+          <hr />
+          <br />
+          <div class="app-links">
+            <a href="#"
+              ><img
+                src="https://freelogopng.com/images/all_img/1664287128google-play-store-logo-png.png"
+                alt="Google Play"
+            /></a>
+            <a href="#"
+              ><img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Download_on_the_App_Store_Badge.svg/2560px-Download_on_the_App_Store_Badge.svg.png"
+                alt="App Store"
+            /></a>
+          </div>
+        </div>
+        <hr />
+        <div class="footer-section">
+          <h3>KEEP IN TOUCH</h3>
+          <hr />
+          <br />
+          <div class="social-icons">
+            <a href="#" id="photo"
+              ><img src="facebook-brands-solid.svg" alt="Facebook"
+            /></a>
+            <a href="#" id="photo"><img src="twitter-brands-solid.svg" alt="Twitter" /></a>
+            <a href="#" id="photo"
+              ><img src="instagram-brands-solid.svg" alt="Instagram"
+            /></a>
+            <a href="#" id="photo"><img src="youtube-brands-solid.svg" alt="YouTube" /></a>
+          </div>
+        </div>
+      </footer>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Manager - Filter Page</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <h2>Admin Manager</h2>
+      <ul>
+        <li><a href="#">Dashboard</a></li>
+        <li><a href="#">My Profile</a></li>
+        <li><a href="#">Order Overview</a></li>
+        <li><a href="#">Agents</a></li>
+        <li><a href="#">Company</a></li>
+        <li><a href="#">Emails</a></li>
+        <li><a href="#">Settings</a></li>
+        <li><a href="#" class="logout">Logout</a></li>
+      </ul>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="content">
+      <header>
+        <h1>Search and Filter Orders</h1>
+      </header>
+
+      <!-- Search Filters -->
+      <section class="filters">
+        <form>
+          <div class="filter-row">
+            <label for="order-id">Search Order:</label>
+            <input type="text" id="order-id" placeholder="Enter Order ID" />
+          </div>
+          <div class="filter-row">
+            <label for="date-from">Date Range:</label>
+            <input type="date" id="date-from" /> to
+            <input type="date" id="date-to" />
+          </div>
+          <div class="filter-row">
+            <label for="status">Order Status:</label>
+            <select id="status">
+              <option value="all">All</option>
+              <option value="pending">Pending</option>
+              <option value="completed">Completed</option>
+              <option value="shipped">Shipped</option>
+            </select>
+          </div>
+          <div class="buttons">
+            <button type="button" class="btn view-all">View All</button>
+            <button type="submit" class="btn search">Search</button>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

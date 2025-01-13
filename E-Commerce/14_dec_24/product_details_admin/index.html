@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Details Admin</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header>
+      <nav>
+        <a href="#">Dashboard</a>
+        <a href="#">Inventory</a>
+        <a href="#">Orders</a>
+        <a href="#">CMS</a>
+      </nav>
+    </header>
+
+    <!-- Product Details Section -->
+    <main class="product-details">
+      <!-- Left Product Image and Info -->
+      <div class="product-info">
+        <h2>Jumping Sports Foot Wear</h2>
+        <p>Inventory: Premium Sports Shoes</p>
+        <img src="/n5.jpg" alt="Sports Shoe Image" />
+        <p>
+          Product description placeholder: Perfect for running, training, and
+          casual wear.
+        </p>
+      </div>
+
+      <!-- Product Settings and Filters -->
+      <div class="product-filters">
+        <!-- Manufacturer -->
+        <label for="manufacturer">Manufacturer</label>
+        <select id="manufacturer">
+          <option>Sigma Shoes</option>
+          <option>Nike</option>
+          <option>Adidas</option>
+          <option>Puma</option>
+        </select>
+
+        <!-- Size -->
+        <label for="size">Size</label>
+        <select id="size">
+          <option>Sports vs.</option>
+          <option>Basic</option>
+          <option>Large</option>
+        </select>
+
+        <!-- Type -->
+        <label for="type">Type</label>
+        <select id="type">
+          <option>Premium</option>
+          <option>Regular</option>
+          <option>Local</option>
+        </select>
+
+        <!-- Alert Level -->
+        <label for="alert-level">Alert Level</label>
+        <select id="alert-level">
+          <option>55%</option>
+          <option>Low</option>
+          <option>High</option>
+        </select>
+
+        <!-- Discount -->
+        <label for="discount">Discount</label>
+        <input type="number" id="discount" placeholder="Enter Discount (%)" />
+
+        <!-- Retail Price -->
+        <div class="price-container">
+          <p>Retail Price</p>
+          <div class="prices">
+            <span id="old-price">195</span>
+            <span id="new-price">185</span>
+          </div>
+        </div>
+
+        <button id="save-button">Save</button>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

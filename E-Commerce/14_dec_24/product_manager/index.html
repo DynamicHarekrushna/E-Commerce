@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Manager</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="product-manager">
+      <!-- Search Section -->
+      <div class="search-bar">
+        <label for="search">Search by Product ID:</label>
+        <input type="text" id="search" placeholder="Search..." />
+        <button onclick="searchProduct()">🔍 Search</button>
+      </div>
+
+      <!-- Add Product Section -->
+      <div class="add-product">
+        <h2>Add Product</h2>
+        <form id="add-product-form">
+          <input
+            type="text"
+            id="product-id"
+            placeholder="Product ID"
+            required
+          />
+          <input
+            type="text"
+            id="product-image"
+            placeholder="Image URL"
+            required
+          />
+          <input
+            type="text"
+            id="product-name"
+            placeholder="Product Name"
+            required
+          />
+          <input
+            type="number"
+            id="product-quantity"
+            placeholder="Quantity"
+            required
+          />
+          <input type="text" id="product-price" placeholder="Price" required />
+          <input
+            type="text"
+            id="product-manufacturer"
+            placeholder="Manufacturer"
+            required
+          />
+          <select id="product-status">
+            <option value="Active">Active</option>
+            <option value="Inactive">Inactive</option>
+          </select>
+          <button type="submit">Add Product</button>
+        </form>
+      </div>
+
+      <!-- Product Table -->
+      <table>
+        <thead>
+          <tr>
+            <th>Product ID</th>
+            <th>Image</th>
+            <th>Product Name</th>
+            <th>Quantity</th>
+            <th>Price</th>
+            <th>Manufacturer</th>
+            <th>Status</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody id="product-table">
+          <!-- Dynamic content will load here -->
+        </tbody>
+      </table>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>

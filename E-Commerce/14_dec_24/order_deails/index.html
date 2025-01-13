@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Order Summary</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Sidebar Navigation -->
+    <aside class="sidebar">
+      <h2>Admin Manager</h2>
+      <ul>
+        <li><a href="#" class="active">Dashboard</a></li>
+        <li><a href="#">My Profile</a></li>
+        <li><a href="#">Agents</a></li>
+        <li><a href="#">General</a></li>
+        <li><a href="#">Delivery</a></li>
+        <li><a href="#" class="logout">Logout</a></li>
+      </ul>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="content">
+      <section class="order-summary">
+        <h1>Order Summary</h1>
+
+        <!-- Order Details -->
+        <div class="order-details">
+          <div class="order-header">
+            <p><strong>Order ID:</strong> <span>Rose Looplor</span></p>
+            <p><strong>Order Date:</strong> <span>24/06/2022</span></p>
+            <p><strong>Customer:</strong> <span>Duong Tu Anh</span></p>
+          </div>
+
+          <!-- Product Image -->
+          <div class="product-image">
+            <img src="/n2.jpg" alt="Product Image" />
+          </div>
+
+          <!-- Product and Shipping Info -->
+          <div class="product-info">
+            <h2>Product Details</h2>
+            <ul>
+              <li>Shipping: <strong>SC.35,022</strong></li>
+              <li>Tax: <strong>Y259,882.00</strong></li>
+              <li>Total: <strong>¥259,882.00</strong></li>
+            </ul>
+          </div>
+
+          <!-- Payment Section -->
+          <div class="payment-info">
+            <h3>Payment Method</h3>
+            <p>Free Shipping Applied</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

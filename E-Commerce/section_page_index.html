@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product List Page</title>
+    <link rel="stylesheet" href="section_page_style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar-section">
+      <ul class="nav-menu">
+        <li class="dropdown">
+          <a href="#" class="dropbtn">Women Ethnic</a>
+          <div class="dropdown-content">
+            <h3>Fashion Jewellery</h3>
+            <a href="#">Necklaces</a>
+            <a href="#">Earrings</a>
+            <a href="#">Bracelets</a>
+          </div>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropbtn">Men Ethnic</a>
+          <div class="dropdown-content">
+            <h3>Fashion Jewellery</h3>
+            <a href="#">Necklaces</a>
+            <a href="#">Earrings</a>
+            <a href="#">Bracelets</a>
+          </div>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropbtn">Kids Ethnic</a>
+          <div class="dropdown-content">
+            <h3>Fashion Jewellery</h3>
+            <a href="#">Necklaces</a>
+            <a href="#">Earrings</a>
+            <a href="#">Bracelets</a>
+          </div>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropbtn">Jewellery & Accessories</a>
+          <div class="dropdown-content">
+            <h3>Fashion Jewellery</h3>
+            <a href="#">Necklaces</a>
+            <a href="#">Earrings</a>
+            <a href="#">Bracelets</a>
+          </div>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropbtn">Beauty & Health</a>
+          <div class="dropdown-content">
+            <h3>Hair Care</h3>
+            <a href="#">Shampoos</a>
+            <a href="#">Conditioners</a>
+          </div>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropbtn">Bags & Footwear</a>
+          <div class="dropdown-content">
+            <h3>Women's Bags</h3>
+            <a href="#">Handbags</a>
+            <a href="#">Clutches</a>
+          </div>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropbtn">Home & Kitchen</a>
+          <div class="dropdown-content">
+            <h3>Cookware</h3>
+            <a href="#">Pots & Pans</a>
+            <a href="#">Pressure Cookers</a>
+          </div>
+        </li>
+      </ul>
+    </nav>
+    <div class="container">
+      <!-- Sidebar for Filters -->
+      <aside class="sidebar">
+        <h2>Filters</h2>
+        <div class="filter-section">
+          <h3>Categories</h3>
+          <ul>
+            <li>
+              <input type="checkbox" id="mobiles" /> Mobiles & Accessories
+            </li>
+            <li><input type="checkbox" id="electronics" /> Electronics</li>
+            <li><input type="checkbox" id="appliances" /> Appliances</li>
+          </ul>
+        </div>
+        <div class="filter-section">
+          <h3>Price</h3>
+          <label for="min-price">Min:</label>
+          <input
+            type="range"
+            id="min-price"
+            min="0"
+            max="50000"
+            step="500"
+            value="0"
+          />
+          <span id="min-price-value">0</span>
+          <br />
+          <label for="max-price">Max:</label>
+          <input
+            type="range"
+            id="max-price"
+            min="0"
+            max="50000"
+            step="500"
+            value="50000"
+          />
+          <span id="max-price-value">50000</span>
+        </div>
+        <div class="filter-section">
+          <h3>Brands</h3>
+          <ul>
+            <li><input type="checkbox" id="redmi" /> Redmi</li>
+            <li><input type="checkbox" id="samsung" /> Samsung</li>
+            <li><input type="checkbox" id="apple" /> Apple</li>
+          </ul>
+        </div>
+        <div class="filter-section">
+          <h3>Customer Rating</h3>
+          <ul>
+            <li>
+              <input
+                type="radio"
+                id="rating-4"
+                name="customer-rating"
+                value="4"
+              />
+              <label for="rating-4">4★ & above</label>
+            </li>
+            <li>
+              <input
+                type="radio"
+                id="rating-3"
+                name="customer-rating"
+                value="3"
+              />
+              <label for="rating-3">3★ & above</label>
+            </li>
+            <li>
+              <input
+                type="radio"
+                id="rating-2"
+                name="customer-rating"
+                value="2"
+              />
+              <label for="rating-2">2★ & above</label>
+            </li>
+            <li>
+              <input
+                type="radio"
+                id="rating-1"
+                name="customer-rating"
+                value="1"
+              />
+              <label for="rating-1">1★ & above</label>
+            </li>
+          </ul>
+          <button class="btn" style="background-color: #1a1a1a;
+          color: white;
+          display: felx;
+          justify-content: center;
+          align-items: center;
+          ">Filter</button>
+        </div>
+      </aside>
+
+      <!-- Product List -->
+      <main class="product-list">
+        <h1>Product List</h1>
+        <div class="products">
+          <a href="product_list_index.html">
+            <div class="product-card">
+              <img src="iphone.jpg" alt="Product 1" />
+              <h2>Redmi 13 5G</h2>
+              <p>6 GB RAM | 128 GB Storage</p>
+              <p>₹13,999</p>
+              <p>⭐⭐⭐⭐ (3.8)</p>
+            </div>
+          </a>
+          <a href="product_list_index.html">
+            <div class="product-card">
+              <img src="iphone.jpg" alt="Product 2" />
+              <h2>Redmi Note 13 Pro+ 5G</h2>
+              <p>8 GB RAM | 256 GB Storage</p>
+              <p>₹27,999</p>
+              <p>⭐⭐⭐⭐⭐ (4.6)</p>
+            </div>
+          </a>
+          <a href="product_list_index.html">
+            <div class="product-card">
+              <img src="iphone.jpg" alt="Product 1" />
+              <h2>Redmi 13 5G</h2>
+              <p>6 GB RAM | 128 GB Storage</p>
+              <p>₹13,999</p>
+              <p>⭐⭐⭐⭐ (3.8)</p>
+            </div>
+          </a>
+          <a href="product_list_index.html" class="product-link">
+            <div class="product-card">
+              <img src="iphone.jpg" alt="Product 2" />
+              <h2>Redmi Note 13 Pro+ 5G</h2>
+              <p>8 GB RAM | 256 GB Storage</p>
+              <p>₹27,999</p>
+              <p>⭐⭐⭐⭐⭐ (4.6)</p>
+            </div>
+          </a>
+          <!-- Add more product cards as needed -->
+        </div>
+      </main>
+    </div>
+
+    <script src="section_page_script.js"></script>
+  </body>
+</html>

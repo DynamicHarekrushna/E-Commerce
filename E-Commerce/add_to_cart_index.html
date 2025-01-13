@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart Page</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+      }
+      .container {
+        max-width: 1200px;
+        margin: 20px auto;
+        background: #fff;
+        border-radius: 8px;
+        padding: 20px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+      h2 {
+        margin-bottom: 20px;
+        color: #333;
+        text-align: center;
+      }
+      .cart-section {
+        display: flex;
+        gap: 20px;
+      }
+      .product-card {
+        flex: 3;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        padding: 15px;
+        background: #f9f9f9;
+      }
+      .product-card img {
+        max-width: 100%;
+        border-radius: 5px;
+        margin-bottom: 15px;
+      }
+      .product-details {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+      }
+      .product-actions {
+        text-align: right;
+      }
+      .product-actions button {
+        padding: 10px 15px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      .product-actions button:hover {
+        background-color: #0056b3;
+      }
+      .price-details {
+        flex: 1;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        padding: 15px;
+        background: #f1f1f1;
+        max-height: 400px;
+      }
+      .price-details p {
+        margin: 10px 0;
+      }
+      .place-order {
+        text-align: center;
+        margin-top: 20px;
+      }
+      .place-order button {
+        padding: 15px 20px;
+        background-color: #28a745;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+      }
+      .place-order button:hover {
+        background-color: #218838;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Cart Page</h2>
+
+      <div class="cart-section">
+        <!-- Product Card -->
+        <div class="product-card">
+          <img src="iphone.jpg" alt="Product Image" />
+          <div class="product-details">
+            <div>
+              <h3>REDMI 13 5G</h3>
+              <p>128 GB, Black Diamond</p>
+            </div>
+            <div>
+              <h3>27,000</h3>
+            </div>
+          </div>
+          <p>Delivery by Sun Oct 27 | Free Delivery</p>
+          <p>Screen Care Plan: 750 (optional)</p>
+          <div class="product-actions">
+            <button onclick="addToCart()">Add Item</button>
+          </div>
+        </div>
+
+        <!-- Price Details -->
+        <div class="price-details">
+          <h3>Price Details</h3>
+          <p>Price (1 item): 27,999.00</p>
+          <p>Discount: 22%</p>
+          <p>Delivery Charges: Free</p>
+          <p>Secured Packaging Fee: Free</p>
+          <hr />
+          <h3>Total Amount: 13,999.00</h3>
+        </div>
+      </div>
+
+      <!-- Place Order Button -->
+      <div class="place-order">
+        <button onclick="placeOrder()">Place Order</button>
+      </div>
+    </div>
+
+    <script>
+      function addToCart() {
+        alert("Item added to the cart!");
+      }
+
+      function placeOrder() {
+        alert("Your order has been placed successfully!");
+        window.location.href = "Animation - 1732789062612 (1).mp4";
+      }
+    </script>
+  </body>
+</html>
